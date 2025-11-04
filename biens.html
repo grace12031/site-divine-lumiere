@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nos biens - Divine Lumière Pro Service</title>
+<style>
+body{margin:0;font-family:Poppins,Segoe UI,Arial,sans-serif;background:#f5f7fa;color:#333}
+.topbar{background:#004aad;color:#fff;text-align:center;padding:8px 5px;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-weight:500}
+.header{background:linear-gradient(135deg,#007bff,#00c3ff);color:#fff;text-align:center;padding:20px}
+.header img{width:120px;display:block;margin:0 auto 10px}
+nav{display:flex;justify-content:center;flex-wrap:wrap;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+nav a{color:#007bff;padding:15px 20px;text-decoration:none;font-weight:500}
+section{padding:40px 20px;text-align:center}
+h2{color:#007bff}
+.button{display:inline-block;background:#007bff;color:#fff;padding:12px 25px;border-radius:30px;text-decoration:none}
+.footer{background:linear-gradient(135deg,#004aad,#007bff);color:#fff;padding:40px 20px 15px;text-align:center}
+.footer .footer-container{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin-bottom:20px}
+.footer-section{max-width:250px}
+.social-icons a{font-size:20px;color:#fff;margin:0 8px;text-decoration:none}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;font-size:28px;border-radius:50%;width:60px;height:60px;line-height:60px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.3);z-index:999;text-decoration:none}
+.fade{opacity:0;transform:translateY(10px);transition:all 0.6s ease}
+.fade.visible{opacity:1;transform:none}
+@media(max-width:600px){.header img{width:100px}.topbar{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="topbar">📞 <a href="tel:+2290196258841">+229 01 96 25 88 41</a> | ✉️ <a href="mailto:divinelumierepro@gmail.com">divinelumierepro@gmail.com</a></div>
+
+<header class="header fade"><img src="logo.png" alt="Logo Divine Lumière Pro Service"><h1>Nos biens disponibles</h1></header>
+
+<nav class="fade"><a href="index.html">Accueil</a><a href="apropos.html">À propos</a><a href="biens.html">Nos biens</a></nav>
+
+<section class="fade">
+  <h2>Biens disponibles au Bénin 🇧🇯</h2>
+
+  <div class="fade">
+    <h3>Terrain de 500 m² à Hêvié Allassancomey</h3>
+    <p>📍 Commune d'Abomey-Calavi</p>
+    <p>📜 Titre foncier disponible</p>
+    <p>🚗 Accessible, zone calme et résidentielle</p>
+    <p>💰 Prix : 5 500 000 F CFA</p>
+    <a class="button" href="https://wa.me/2290196258841?text=Bonjour%20Divine%20Lumi%C3%A8re%20Pro%20Service%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20terrain%20%C3%A0%20H%C3%AAvi%C3%A9%20Allassancomey" target="_blank">💬 Contacter sur WhatsApp</a>
+  </div>
+
+  <div class="fade">
+    <h3>Parcelle de 1000 m² à Zè centre</h3>
+    <p>📍 Commune de Zè, Département de l’Atlantique</p>
+    <p>📜 Titre foncier régulier</p>
+    <p>🌴 Terrain plat, proche de la route</p>
+    <p>💰 Prix : 8 000 000 F CFA</p>
+    <a class="button" href="https://wa.me/2290196258841?text=Bonjour%20Divine%20Lumi%C3%A8re%20Pro%20Service%2C%20je%20souhaite%20des%20informations%20sur%20la%20parcelle%20%C3%A0%20Z%C3%A8" target="_blank">💬 Contacter sur WhatsApp</a>
+  </div>
+
+  <div class="fade">
+    <h3>Villa moderne 3 chambres à Hêvié</h3>
+    <p>📍 Hêvié, Abomey-Calavi</p>
+    <p>📜 Titre foncier disponible</p>
+    <p>🏠 Salon spacieux, cuisine moderne, garage</p>
+    <p>💰 Prix : 45 000 000 F CFA</p>
+    <a class="button" href="https://wa.me/2290196258841?text=Bonjour%20Divine%20Lumi%C3%A8re%20Pro%20Service%2C%20je%20veux%20des%20d%C3%A9tails%20sur%20la%20villa%20%C3%A0%20H%C3%AAvi%C3%A9" target="_blank">💬 Contacter sur WhatsApp</a>
+  </div>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/2290196258841?text=Bonjour%20Divine%20Lumi%C3%A8re%20Pro%20Service" target="_blank">💬</a>
+
+<footer class="footer fade"><div class="footer-container"><div class="footer-section"><h3>Divine Lumière Pro Service</h3><p>Experts immobiliers à Cotonou — Vente, location et gestion.</p></div></div><div>© 2025 Divine Lumière Pro Service — Tous droits réservés.</div></footer>
+<script>
+function setupFade(){
+  const els = document.querySelectorAll('.fade');
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, {threshold:0.15});
+  els.forEach(el=> observer.observe(el));
+}
+document.addEventListener('DOMContentLoaded', setupFade);
+</script>
+</body>
+</html>

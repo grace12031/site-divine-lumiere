@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Divine Lumière Pro Service - Immobilier</title>
+<style>
+body{margin:0;font-family:Poppins,Segoe UI,Arial,sans-serif;background:#f5f7fa;color:#333}
+.topbar{background:#004aad;color:#fff;text-align:center;padding:8px 5px;font-size:14px}
+.topbar a{color:#fff;text-decoration:none;font-weight:500}
+.header{background:linear-gradient(135deg,#007bff,#00c3ff);color:#fff;text-align:center;padding:20px}
+.header img{width:120px;display:block;margin:0 auto 10px}
+nav{display:flex;justify-content:center;flex-wrap:wrap;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+nav a{color:#007bff;padding:15px 20px;text-decoration:none;font-weight:500}
+section{padding:40px 20px;text-align:center}
+h2{color:#007bff}
+.button{display:inline-block;background:#007bff;color:#fff;padding:12px 25px;border-radius:30px;text-decoration:none}
+.footer{background:linear-gradient(135deg,#004aad,#007bff);color:#fff;padding:40px 20px 15px;text-align:center}
+.footer .footer-container{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin-bottom:20px}
+.footer-section{max-width:250px}
+.social-icons a{font-size:20px;color:#fff;margin:0 8px;text-decoration:none}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;font-size:28px;border-radius:50%;width:60px;height:60px;line-height:60px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.3);z-index:999;text-decoration:none}
+.fade{opacity:0;transform:translateY(10px);transition:all 0.6s ease}
+.fade.visible{opacity:1;transform:none}
+@media(max-width:600px){.header img{width:100px}.topbar{font-size:13px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  📞 <a href="tel:+2290196258841">+229 01 96 25 88 41</a> | ✉️ <a href="mailto:divinelumierepro@gmail.com">divinelumierepro@gmail.com</a>
+</div>
+
+<header class="header fade">
+  <img src="logo.png" alt="Logo Divine Lumière Pro Service">
+  <h1>Divine Lumière Pro Service</h1>
+  <p>Experts en immobilier — vente, location et gestion au Bénin.</p>
+</header>
+
+<nav class="fade">
+  <a href="index.html">Accueil</a>
+  <a href="apropos.html">À propos</a>
+  <a href="biens.html">Nos biens</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="fade">
+  <h2>Bienvenue chez Divine Lumière Pro Service</h2>
+  <p>Nous mettons à votre disposition notre expertise pour vous accompagner dans vos projets immobiliers à Cotonou et dans tout le Bénin.</p>
+  <a class="button" href="biens.html">Découvrir nos biens disponibles 🏘️</a>
+</section>
+
+<section id="contact" class="fade">
+  <h2>Contactez-nous</h2>
+  <a href="tel:+2290196258841" class="button">📞 Appeler maintenant</a>
+  <a href="mailto:divinelumierepro@gmail.com" class="button">📧 Envoyer un e-mail</a>
+  <a href="https://wa.me/2290196258841?text=Bonjour%20Divine%20Lumi%C3%A8re%20Pro%20Service" class="button" target="_blank">💬 WhatsApp</a>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/2290196258841?text=Bonjour%20Divine%20Lumi%C3%A8re%20Pro%20Service" target="_blank">💬</a>
+
+<footer class="footer fade">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Divine Lumière Pro Service</h3>
+      <p>Experts en immobilier — Vente, location et gestion.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>📍 Cotonou, Bénin</p>
+      <p>📞 +229 01 96 25 88 41</p>
+      <p>✉️ divinelumierepro@gmail.com</p>
+    </div>
+    <div class="footer-section">
+      <h4>Suivez-nous</h4>
+      <div class="social-icons">
+        <a href="https://wa.me/2290196258841" target="_blank">💬</a>
+        <a href="https://facebook.com/" target="_blank">📘</a>
+        <a href="https://instagram.com/" target="_blank">📸</a>
+        <a href="https://linkedin.com/" target="_blank">💼</a>
+      </div>
+    </div>
+  </div>
+  <div>© 2025 Divine Lumière Pro Service — Tous droits réservés.</div>
+</footer>
+
+<script>
+function setupFade(){
+  const els = document.querySelectorAll('.fade');
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, {threshold:0.15});
+  els.forEach(el=> observer.observe(el));
+}
+document.addEventListener('DOMContentLoaded', setupFade);
+</script>
+</body>
+</html>
